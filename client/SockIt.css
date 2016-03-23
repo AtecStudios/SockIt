@@ -1,1 +1,33 @@
 
+.console{
+  background-color: black;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-bottom: 2vh;
+  margin: 2vh;
+  height: 50vh;
+  width: 50vw;
+  margin-bottom: 5vh;
+}
+
+.console span {
+  color: white;
+}
+.console li{
+
+}
+
+.line-number{
+  background-color: grey;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin: 0;
+  margin-left: 2vw;
+
+}
+.line-message{
+  border: solid 1px white;
+}

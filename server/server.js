@@ -18,6 +18,7 @@ Meteor.methods({
       port: data.port,
       type: data.type,
       duration: 30,
+      timeLeft: 25,
       status: "Creating..."
     };
     var id = Sockets.insert(newSocket);

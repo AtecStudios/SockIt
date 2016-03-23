@@ -1,11 +1,38 @@
 <template name="SocketView">
-  <div class="card">
-    <h1>{{title}}</h1>
-    <p>
-      {{desc}}
-    </p>
-    {{>SocketConsole}}
+  <style>
+  .card{
+    width: 100%;
+  }
+  b{
+    font-size: 16pt
+  }
+  </style>
+  {{>AppBar}}
+  <div class="container">
+    <div class="card red container">
+      <div class="card-content white-text">
+        <span class="card-title">{{title}}</span>
+        <div class="row">
+          <div class="col s3">
+            <b>Port: {{port}}</b>
+          </div>
+          <div class="col s3">
+            <b>Status: {{status}}</b>
+          </div>
+          <div class="col s3">
+          <b>Time Left: {{timeleft}}</b>
+          </div>
+          <div class="col s3">
+            <b>Type: {{type}}</b>
+          </div>
+        </div>
 
 
+
+
+        <hr />
+        {{>SocketConsole}}
+      </div>
+    </div>
   </div>
 </template>
