@@ -2,10 +2,10 @@
   <form class="new-socket">
   <div class="row">
     <div class="input-field col s2">
-      <input placeholder="Name" id="name" type="text" class="validate">
+      <input placeholder="Name" id="name" type="text" class="validate" length="10">
     </div>
     <div class="input-field col s1">
-      <input placeholder="Port" id="port" type="text" class="validate">
+      <input placeholder="Port" id="port" type="number"  min="2000" max="10000" value="3030">
 
     </div>
     <div class="input-field col s1">
@@ -22,4 +22,9 @@
 
   </div>
 </form>
+
+<script>
+$(document).ready(function() {
+  $('input#name').characterCounter();
+});</script>
 </Template>
