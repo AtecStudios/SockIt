@@ -1,0 +1,25 @@
+<Template name="SocketNew">
+  <form class="new-socket">
+  <div class="row">
+    <div class="input-field col s2">
+      <input placeholder="Name" id="name" type="text" class="validate">
+    </div>
+    <div class="input-field col s1">
+      <input placeholder="Port" id="port" type="text" class="validate">
+
+    </div>
+    <div class="input-field col s1">
+      <select class="browser-default" id="socketType">
+        <option value="" disabled selected>Socket Type</option>
+        <option value="UDP">UDP</option>
+        <option value="TCP">TCP</option>
+        <option value="WEB">WebSockets</option>
+      </select>
+    </div>
+    <div class="input-field col s2">
+      <button class="btn waves-effect waves-light red" type="submit" name="action">Submit</button>
+    </div>
+
+  </div>
+</form>
+</Template>
